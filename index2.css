@@ -1,0 +1,30 @@
+/* css for the second page */
+
+body{
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav h3 {
+    padding: 0;
+    margin: 25px;
+    justify-content: center;
+}
+.footer_div {
+    background-color: lightblue;
+    border-style: thick;
+    border-color: black;
+    width: 100px;
+    height: 50px;
+    align-content: center;
+    border-radius: 25%;
+}
+.siteplan {
+    color: black;
+    padding: 5px;
+    min-width: 50px;
+    min-height: 25px;
+}
