@@ -1,18 +1,72 @@
-/* css for my personal site */ 
+/* css for my home page */ 
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #2A2A72 ;
+    --secondary-color: #009FFD ;
+    --accent1-color: #EAF6FF;
+    --accent2-color: #232528;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: "Playfair Display", serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #2A2A72;  /* headlines on a white background */ 
+    --headline-color-on-color: #EAF6FF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #2A2A72; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #EAF6FF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #2A2A72  ;
+    --nav-link-color: #EAF6FF;
+    --nav-background-color: #232528;
+    --nav-hover-link-color: #EAF6FF;
+    --nav-hover-background-color: #2A2A72;
+  }
+
 
 body{
-    justify-items: center;
-    align-items: center;
     display: grid;
-    background-color: #EAF6FF;
-    padding: 0;
-    margin: 0;
+    place-items: center;
+}
+hr {
+    height: 3px;
+    background: var(--accent2-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 25px;
+    margin: 5px;
+    gap: 20px; /* Adds spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background: var(--accent1-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 header nav{
     display: flex;
 }
-
+nav h3 a:hover {
+    background: var(--accent1-color);
+    color: var(--secondary-color);
+}
 header nav h3 {
     padding: 0;
     margin: 25px;
@@ -24,21 +78,28 @@ header {
     align-items: center;
 }
 .boxTitle {
+    display: flex;
     background-color: #009FFD;
-    margin: 10px;
-    height: 150px;
-    width: 500px;
-    justify-items: center;
+    height: 125px;
+    width: 100%; /* Make it responsive */
+    max-width: 500px; /* Prevent it from getting too wide */
+    margin: 10px auto; /* Centers the div itself */
+    justify-content: center;
     align-items: center;
-    align-content: center;
+    text-align: center;
+    border-radius: 10px; /* Optional: Soft rounded corners */
 }
-div h1 {
-    padding-left: 30px;
+.boxTitle h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
 }
-.mypic {
+.mypic, .mypic2 {
+    width: 100%; /* Ensures it resizes within its container */
     max-width: 500px;
-    max-height: 300px;
+    height: auto; /* Maintains aspect ratio */
 }
+
 .logo {
     max-width: 200px;
     max-height: 200px;
@@ -48,18 +109,32 @@ main {
     justify-items: center;
     align-items: center;
 }
-.footer_div {
-    background-color: lightblue;
-    border-style: thick;
-    border-color: black;
-    width: 100px;
-    height: 50px;
-    align-content: center;
-    border-radius: 25%;
+footer {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
+
+.footer_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
 .siteplan {
-    color: black;
-    padding: 5px;
-    min-width: 50px;
-    min-height: 25px;
+    color: var(--accent2-color);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.siteplan:hover {
+    background: var(--accent1-color);
+    color: var(--secondary-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
