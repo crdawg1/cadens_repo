@@ -25,11 +25,11 @@
     --nav-hover-background-color: #2A2A72;
   }
 
-
 body{
     display: grid;
     place-items: center;
-    padding: 20px;
+    padding-top: 50px;
+    margin: 0;
     background: var(--accent1-color);
 }
 p {
@@ -91,13 +91,11 @@ header {
     align-items: center;
 }
 .boxTitle {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    height: auto;
     padding: 20px;
-    width: 90%;
     max-width: 500px;
     margin: 20px auto;
     border-radius: 10px;
@@ -109,36 +107,42 @@ header {
     font-size: 25px;
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     max-width: 100%;
 }
 .mypic {
     width: 100%;
     max-width: 350px;
     height: auto;
-    padding: 20px;
+    padding: 0;
+    border: 5px solid black
 }
 .mypic2 {
     width: 100%;
     max-width: 350px;
     height: auto;
-    padding: 20px;
-    justify-content: flex-end;
+    padding: 0;
+    border: 5px solid black;
+    justify-content: center;
+    border-style: thick;
 }
 
 .logo {
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%;
+    border: 5px solid black;
 }
 main {
     justify-items: center;
     align-items: center;
 }
-main h2, h3, p {
+main h2 {
     padding: 50px;
     margin: 25px;
+}
+p {
+    font-size: 20px;
 }
 footer {
     text-align: center;
