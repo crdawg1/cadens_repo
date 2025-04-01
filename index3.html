@@ -6,25 +6,53 @@
     <link rel="stylesheet" href="index3.css">
     <title>Document</title>
 </head>
-
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="index2.html">About Me</a>
+    <a href="index3.html">Contact Me</a>
+  </div>
 <body>
     <header>
-        <nav>
-            <h3>
-                <a href="index.html">Home</a>
-            </h3>
-            <h3>
-                <a href="index2.html">About Me</a>
-            </h3>
-        </nav>
+        <div>
+            <h1 class="contact">Contact Me</h1>
+        </div>
     </header>
     <hr>
-    <p>
-        Whether it’s creating a website, or just working with others, I bring a love for what I do and a great desire to learn new things and help others along the way that adds value to any team. I’m always looking for opportunities to collaborate and make a meaningful impact. 
-    </p>
-    <p>Images for the Page 3</p>
-    <img src="images/teamwork.jpeg" alt="image for page3">
-    <img src="images/cybersecurity.jpeg" alt="image for page3">
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="reason">Reason</label>
+          <input type="text" id="reason" name="reason" placeholder="Your reason...">
+            
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      <div>
+            <h3>And please follow me on my socials</h3>
+      </div>
+      <div class="social_section">
+            <a href="https://www.instagram.com/andycandersen/" target="_blank">
+                <img class="socials" src="images/Instagram_icon.png" alt="insta">
+            </a>
+            <a href="https://www.facebook.com/caden.andersen.16" target="_blank">
+                <img class="socials" src="images/Facebook_icon.png" alt="fb">
+            </a>
+            <a href="https://www.linkedin.com/in/caden-andersen-148371333/" target="_blank">
+                <img class="socials" src="images/LinkedIn_icon.png" alt="linked_in">
+            </a>
+      </div>
 </body>
 <hr>
 <footer>

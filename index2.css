@@ -123,24 +123,21 @@ header {
     justify-items: center;
     align-items: center;
   }
-.boxTitle {
+  .boxTitle {
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    height: auto;
-    padding: 20px;
-    width: auto;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 35px auto;
     border-radius: 10px;
     text-align: center;
-  }
+}
 .boxTitle h1 {
     margin: 20px;
     padding: 20px;
     font-size: 25px;
-  }
+}
 .container {
     display: grid;
     max-width: 100%;
