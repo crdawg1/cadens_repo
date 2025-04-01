@@ -27,7 +27,7 @@
 
 body{
     display: grid;
-    padding: 0px 75px;
+    /* padding: 0px 75px; */
     margin: 0 auto;
     text-align: center;
     background: var(--accent1-color);

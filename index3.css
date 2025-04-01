@@ -29,6 +29,7 @@
 body{
     justify-content: center;
     background-color: var(--accent1-color);
+    margin: 0;
 }
 
 header nav{
@@ -52,6 +53,7 @@ header nav h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
   }
   
   /* Style the links inside the navigation bar */

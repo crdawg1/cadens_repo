@@ -27,7 +27,7 @@
 
 body{
     display: grid;
-    padding: 0px 75px;
+    /* padding: 0px 75px; */
     margin: 0;
     background: var(--accent1-color);
 }
@@ -94,6 +94,7 @@ header {
     justify-items: center;
     align-items: center;
 }
+
 /* This is where my simple component starts */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -102,6 +103,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
   }
   
   /* Style the links inside the navigation bar */
@@ -126,6 +128,7 @@ header {
     color: white;
   }
   /* This is where my simple component ends */
+
 .boxTitle {
     display: grid;
     justify-content: center;
